@@ -16,8 +16,6 @@ function coding(input, { shift, codingType }) {
     .map((el, i) => [strLower.split('')[i], el]);
   codeMap = Object.fromEntries(codeMap);
 
-  console.log(codeMap);
-
   for (let i = 0; i < arrStr.length; i++) {
     const letter = arrStr[i];
 
@@ -32,7 +30,6 @@ function coding(input, { shift, codingType }) {
     }
   }
 
-  console.log(arrStr.join(''));
   return arrStr.join('');
 }
 
